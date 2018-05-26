@@ -1,0 +1,16 @@
+{
+  "name": "ES6Katas",
+  "version": "1.0.0",
+  "description": "http://es6katas.org/",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-register": "^6.26.0",
+    "mocha": "^5.2.0"
+  },
+  "scripts": {
+    "test": "mocha --require babel-register test/**/*.js",
+    "test:watch": "mocha --reporter min --watch --require babel-register test/**/*.js"
+
+  }
+}
