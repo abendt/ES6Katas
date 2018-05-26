@@ -1,4 +1,4 @@
-const assert = require('assert');
+const assert = require('chai').assert;
 
 describe('a Promise represents an operation that hasn`t completed yet, but is expected in the future', function() {
 
