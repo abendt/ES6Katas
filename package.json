@@ -5,6 +5,7 @@
   "main": "index.js",
   "license": "MIT",
   "devDependencies": {
+    "babel-polyfill": "^6.26.0",
     "babel-register": "^6.26.0",
     "chai": "^4.1.2",
     "jsdom": "^11.11.0",
@@ -12,7 +13,7 @@
     "mocha": "^5.2.0"
   },
   "scripts": {
-    "test": "mocha --require babel-register test/**/*.js",
-    "test:watch": "mocha --reporter min --watch --require babel-register test/**/*.js"
+    "test": "mocha --require babel-polyfill --compilers js:babel-register test/**/*.js",
+    "test:watch": "mocha --reporter min --watch --require babel-polyfill --compilers js:babel-register test/**/*.js"
   }
 }
