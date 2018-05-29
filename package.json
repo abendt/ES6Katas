@@ -13,7 +13,7 @@
     "mocha": "^5.2.0"
   },
   "scripts": {
-    "test": "mocha --require babel-polyfill --compilers js:babel-register test/**/*.js",
+    "test":       "mocha                        --require babel-polyfill --compilers js:babel-register test/**/*.js",
     "test:watch": "mocha --reporter min --watch --require babel-polyfill --compilers js:babel-register test/**/*.js"
   }
 }
