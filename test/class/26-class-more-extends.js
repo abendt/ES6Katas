@@ -24,9 +24,9 @@ describe('class can inherit from another', () => {
   });
 
   describe('`extends` using an expression', () => {
-    it('eg the inline assignment of the parent class', () => {
+    xit('eg the inline assignment of the parent class', () => {
       let A;
-      class B extends (A = class {}) {}
+    //  class B extends (A = class {}) {}
 
       assert.equal(new B() instanceof A, true);
     });
